@@ -32,14 +32,13 @@ function setup() {
 }
 
 function draw() {
-  
+    
+//  fill(255, 10);
 
   background(0,2);
   if (currVideos.length > 2) {
     currVideos.shift()
   }
-
-//  console.log(currVideos.length)
 
 
   for (let i = 0; i < currVideos.length; i++) {
@@ -53,7 +52,7 @@ function draw() {
     if (alpha < 255) alpha++;
     //console.log(alpha);
     currVideos[i].alpha = alpha;
-    fill(0,100);
+    fill(137,196,255,100);
     //tint(255,100);
     noStroke();
     rect(0, 0, currWidth, currHeight); //center      
